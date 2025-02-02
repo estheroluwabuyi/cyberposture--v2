@@ -2,6 +2,7 @@ import AboutLayout from "./AboutLayout";
 import Brands from "./Brands";
 import SectorOverview from "./SectorOverview";
 import ServiceLayout from "./ServiceLayout";
+import Reviews from "./Reviews";
 
 function Main() {
   return (

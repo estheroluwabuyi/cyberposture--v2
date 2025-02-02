@@ -486,6 +486,16 @@ img {
   line-height: 23.71px;
 }
 
+/* REVIEWS */
+.reviews {
+  background: var(--background-color);
+}
+.review-card-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 /* ABOUT US PAGE */
 .about-page {
   height: 100vh;
