@@ -10,6 +10,7 @@ function Main() {
       <Brands />
       <AboutLayout />
       <ServiceLayout />
+      <Reviews />
     </div>
   );
 }
