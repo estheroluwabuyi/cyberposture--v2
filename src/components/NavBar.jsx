@@ -4,13 +4,23 @@ import ScheduleBtn from "./ScheduleBtn";
 
 function NavBar() {
   return (
-    <section className="nav-bar">
-      <Logo />
-      <NavBarLinks />
-      <ScheduleBtn scheduleBtn="scheduleBtn" btnPrimary="btnPrimary">
-        Schedule
-      </ScheduleBtn>
-    </section>
+    <div>
+      <section className="nav-banner">
+        <Logo />
+
+        <button className="nav-bar-menu">
+          <img src="menu.png" alt="menu bar" />
+        </button>
+      </section>
+
+      <section className="nav-bar">
+        <Logo />
+        <NavBarLinks />
+        <ScheduleBtn scheduleBtn="scheduleBtn" btnPrimary="btnPrimary">
+          Schedule
+        </ScheduleBtn>
+      </section>
+    </div>
   );
 }
 

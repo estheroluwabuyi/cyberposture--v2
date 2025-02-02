@@ -151,6 +151,10 @@ img {
   padding-top: 7rem;
 }
 
+.nav-banner {
+  display: none;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -699,3 +703,112 @@ img {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 1500px) {
+  /* .hero-heading {
+    font-size: 5rem;
+  }
+
+  .hero-dynamic-texts li {
+    font-size: 25rem;
+  }
+
+  .hero-texts {
+    font-size: 1.6rem;
+    width: 50rem;
+  }
+
+  .about-card {
+    width: 350px;
+    height: 450px;
+  }
+
+  .service-card {
+    width: 45rem;
+    height: 30rem;
+  }
+
+  .review-card {
+    width: 450px;
+    height: 300px;
+  }
+
+  .cta-title {
+    font-size: 6rem;
+  }
+
+  .cta-texts {
+    font-size: 2rem;
+  } */
+}
+
+@media (max-width: 767px) {
+  .nav-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: block; */
+    background-color: var(--background-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
+
+  .nav-bar-links {
+    display: none;
+  }
+
+  .nav-bar-menu {
+    background: none;
+    width: 3rem;
+    height: auto;
+  }
+  .nav-bar-logo {
+    width: 13rem;
+    height: auto;
+  }
+  .nav-bar {
+    /* flex-direction: column;
+    align-items: center;
+    padding: var(--space-md);
+    height: auto;
+    box-shadow: none; */
+    display: none;
+  }
+  /* .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-md);
+    height: auto;
+    box-shadow: none;
+  }
+
+  .nav-bar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    width: 100%;
+    padding: var(--space-sm) 0;
+  }
+
+  .nav-bar-links li {
+    width: 100%;
+    text-align: center;
+    padding: var(--space-xs);
+  }
+
+  .nav-bar-links-link {
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .scheduleBtn {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-top: var(--space-md);
+  } */
+}

@@ -26,3 +26,25 @@ function NavBarLinks() {
 }
 
 export default NavBarLinks;
+
+/*
+function NavBarMenuBar({ slideMenu }) {
+  return (
+    <div
+      className="nav-bar--menu"
+      onClick={slideMenu}
+      role="button"
+      aria-label="Open menu"
+    >
+      <figure className="nav-bar--menu-img">
+        <img
+          src="./img/burger-bar.png"
+          alt="menu-bar"
+          width="100"
+          height="100"
+        />
+      </figure>
+    </div>
+  );
+}
+*/
