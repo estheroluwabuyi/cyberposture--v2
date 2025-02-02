@@ -20,14 +20,25 @@ function AppContent() {
           <Route path="home" element={<Home />} />
           <Route path="service" element={<Service />} />
           <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          {/* <Route path="schedule" element={<Schedule />} /> */}
+          {/* <Route path="contact" element={<Contact />} /> */}
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Header>
-      {showMain && <Main />} {/* Show Main only on Home */}
+      {showMain && <Main />}
     </div>
   );
 }
 
+/*
+// function Footer() {
+//   return (
+//     <div className="footer">
+//       {/* <a href="#contact"></a> 
+//       <p>© {new Date().getFullYear()} CyberPosture. All rights reserved.</p>
+//     </div>
+//   );
+// }
+
+// export default Footer;
+*/
 export default AppContent;

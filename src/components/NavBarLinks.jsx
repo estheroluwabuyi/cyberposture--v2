@@ -16,9 +16,11 @@ function NavBarLinks() {
       </li>
 
       <li>
-        <NavLink to="/contact" className="nav-bar-links-link">
+        {/* <NavLink to="/contact" className="nav-bar-links-link"></NavLink> */}
+
+        <a href="#contact" className="nav-bar-links-link">
           Contact us
-        </NavLink>
+        </a>
       </li>
     </ul>
   );

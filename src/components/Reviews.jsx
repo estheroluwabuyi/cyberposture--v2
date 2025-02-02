@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 const reviewCards = [
   {
-    quote: "",
+    quote: "/quote.png",
     src: "/avatar.png",
     name: "Jacob Esau",
     title: "CEO Cellulant group",
@@ -11,7 +11,7 @@ const reviewCards = [
       "Ensure your organization is prepared to meet the highest standards of cybersecurity compliance. Our readiness assessments identify gaps and provide actionable recommendations",
   },
   {
-    quote: "",
+    quote: "/quote.png",
     src: "/avatar.png",
     name: "Jacob Esau",
     title: "CEO Cellulant group",
@@ -19,7 +19,7 @@ const reviewCards = [
       "Ensure your organization is prepared to meet the highest standards of cybersecurity compliance. Our readiness assessments identify gaps and provide actionable recommendations",
   },
   {
-    quote: "",
+    quote: "/quote.png",
     src: "/avatar.png",
     name: "Jacob Esau",
     title: "CEO Cellulant group",
@@ -27,7 +27,7 @@ const reviewCards = [
       "Ensure your organization is prepared to meet the highest standards of cybersecurity compliance. Our readiness assessments identify gaps and provide actionable recommendations",
   },
   {
-    quote: "",
+    quote: "/quote.png",
     src: "/avatar.png",
     name: "Jacob Esau",
     title: "CEO Cellulant group",
@@ -35,7 +35,7 @@ const reviewCards = [
       "Ensure your organization is prepared to meet the highest standards of cybersecurity compliance. Our readiness assessments identify gaps and provide actionable recommendations",
   },
   {
-    quote: "",
+    quote: "/quote.png",
     src: "/avatar.png",
     name: "Jacob Esau",
     title: "CEO Cellulant group",
@@ -43,7 +43,7 @@ const reviewCards = [
       "Ensure your organization is prepared to meet the highest standards of cybersecurity compliance. Our readiness assessments identify gaps and provide actionable recommendations",
   },
   {
-    quote: "",
+    quote: "/quote.png",
     src: "/avatar.png",
     name: "Jacob Esau",
     title: "CEO Cellulant group",
@@ -63,17 +63,16 @@ function Reviews() {
       <section className="review-container">
         {reviewCards.map((card, index) => (
           <div key={index} className="review-card">
-            <div className="review-card-quote">{card.quote}</div>
+            <div className="review-card-quote">
+              <img src={card.quote} alt="quote" width="100" height="100" />
+            </div>
 
             <div className="review-card-profile">
-              <img
-                src={card.src}
-                alt="avatar"
-                width="100"
-                height="100"
-                className="review-card-profile-img"
-              />
-              <div>
+              <div className="review-card-profile-img">
+                <img src={card.src} alt="avatar" width="100" height="100" />
+              </div>
+
+              <div className="review-card-profile-name-title">
                 <h3 className="review-card-profile-name">{card.name}</h3>
                 <p className="review-card-profile-title">{card.title}</p>
               </div>
