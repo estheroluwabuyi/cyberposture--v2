@@ -43,6 +43,6 @@ For inquiries or more information, reach out to us via our website or social med
 ---
 
 ### **Repository Update**  
-Due to technical issues, we have moved this project to a new repository. The original version can be found [here](https://https://github.com/estheroluwabuyi/cyberposture). This version continues all development and updates moving forward.
+Due to technical issues, we have moved this project to a new repository. The original version can be found [here](https://github.com/estheroluwabuyi/cyberposture). This version continues all development and updates moving forward.
 
 Stay secure with CyberPosture. 🚀
