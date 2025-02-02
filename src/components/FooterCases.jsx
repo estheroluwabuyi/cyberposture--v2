@@ -24,11 +24,12 @@ const links = [
 
 function FooterCases() {
   return (
-    <div className="footer-cases">
+    <div className="footer-cases footer-links">
+      <h4 className="footer-links-header">Use cases</h4>
       {links.map((l, i) => (
-        <ul className="" key={index}>
+        <ul className="footer-links-lists" key={i}>
           <li>
-            <a href="#"></a>
+            <a href="#">{l.link}</a>
           </li>
         </ul>
       ))}

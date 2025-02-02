@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBarLinks() {
@@ -16,8 +17,6 @@ function NavBarLinks() {
       </li>
 
       <li>
-        {/* <NavLink to="/contact" className="nav-bar-links-link"></NavLink> */}
-
         <a href="#contact" className="nav-bar-links-link">
           Contact us
         </a>
