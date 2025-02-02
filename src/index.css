@@ -48,6 +48,18 @@
   --btn-gradient: linear-gradient(90deg, #09c6de, #460389);
   --nav-gradient: linear-gradient(to bottom, #11121b 100%, #00000000 0%);
   --linear-gradient: linear-gradient(#09c6de, #460389);
+  --header-background-gradient: radial-gradient(
+      ellipse at center,
+      #12d5f54d,
+      #12d5f500 80%
+    ),
+    radial-gradient(ellipse at top left, #11121b, #0f111a);
+  --other-background-gradient: radial-gradient(
+      ellipse at center,
+      #89dce94d,
+      #12d5f500 80%
+    ),
+    radial-gradient(ellipse at top left, #11121b, #0f111a);
 }
 
 *,
@@ -134,9 +146,7 @@ img {
 
 /* Header */
 .header {
-  position: relative;
-  background: radial-gradient(ellipse at center, #12d5f54d, #12d5f500 80%),
-    radial-gradient(ellipse at top left, #11121b, #0f111a);
+  background: var(--header-background-gradient);
   width: 100%;
   color: white;
   height: 100vh;
@@ -451,8 +461,7 @@ img {
 
 /* SERVICE */
 .service {
-  background: radial-gradient(ellipse at center, #12d5f54d, #12d5f500 80%),
-    radial-gradient(ellipse at top left, #11121b, #0f111a);
+  background: var(--other-background-gradient);
 }
 
 .service-container {
@@ -579,10 +588,46 @@ img {
   color: #a7a7af;
 }
 
+/* CTA */
+.cta {
+  display: grid;
+  padding: 83.44px 0;
+  place-items: center;
+  background: var(--other-background-gradient);
+}
+
+.cta-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 529px;
+  text-align: center;
+}
+
+.cta-title {
+  font-weight: 500;
+  font-size: 53.36px;
+  list-style: 56.21px;
+  color: #f6f6f9;
+  padding-bottom: 17.57px;
+}
+
+.cta-texts {
+  padding: 0 9.27px;
+  font-size: 17px;
+  line-height: 25px;
+  padding-bottom: 21.08px;
+  color: #d4d4e1;
+}
+
+/* Footer */
+.footer-apps img {
+  width: 21.08px;
+  height: 21.08px;
+}
+
 .footer {
-  background: red;
-  /* height: 100vh;
-  width: 100%; */
+  background-color: var(--background-color);
 }
 
 /* ABOUT US PAGE */

@@ -6,7 +6,8 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Schedule from "../pages/Schedule";
 import NoPage from "../pages/NoPage";
-import Main from "./Main";
+import Layout from "./Layout";
+import Footer from "./Footer";
 
 function AppContent() {
   const location = useLocation();
@@ -24,7 +25,7 @@ function AppContent() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Header>
-      {showMain && <Main />}
+      {showMain && <Layout />}
     </div>
   );
 }

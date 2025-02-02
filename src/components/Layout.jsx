@@ -3,8 +3,10 @@ import Brands from "./Brands";
 import SectorOverview from "./SectorOverview";
 import ServiceLayout from "./ServiceLayout";
 import Reviews from "./Reviews";
+import Footer from "./Footer";
+import CTA from "./CTA";
 
-function Main() {
+function Layout() {
   return (
     <div className="main">
       <SectorOverview />
@@ -12,8 +14,10 @@ function Main() {
       <AboutLayout />
       <ServiceLayout />
       <Reviews />
+      <CTA />
+      <Footer />
     </div>
   );
 }
 
-export default Main;
+export default Layout;
