@@ -9,7 +9,6 @@ const aboutCards = [
     title: "Proactive Approach",
     texts:
       "We stay ahead of emerging threats to ensure your organization is always protected.",
-    class: "img-1",
   },
   {
     src: "/icon-2.png",
@@ -17,7 +16,6 @@ const aboutCards = [
     title: "Expertise",
     texts:
       "Our team of seasoned professionals brings deep industry knowledge and experience.",
-    class: "img-2",
   },
   {
     src: "/icon-3.png",
@@ -25,7 +23,6 @@ const aboutCards = [
     title: "Tailored Solutions",
     texts:
       "We understand that every organization is unique. Our solutions are customized to meet your specific needs.",
-    class: "img-2",
   },
   {
     src: "/icon-4.png",
@@ -33,7 +30,6 @@ const aboutCards = [
     title: "Commitment to Excellence",
     texts:
       "We are dedicated to delivering the highest quality services and achieving the best outcomes for our clients.",
-    class: "img-2",
   },
 ];
 
@@ -41,28 +37,29 @@ function AboutLayout() {
   const [activeId, setActiveId] = useState(null);
 
   return (
-    <div className="about">
+    <section className="about">
       <SectionHeading>How we work</SectionHeading>
       <CustomizedHeading>
         <div>We ensure your organization is protected</div> against evolving
         threats and meets all regulatory requirements.
       </CustomizedHeading>
 
-      <section className="about-container">
+      <div className="about-container">
         {aboutCards.map((card, index) => (
-          <div key={index} className="about-card"               onMouseEnter={() => setActiveId(index)}
-              onMouseLeave={() => setActiveId(null)}
-              onTouchStart={() => setActiveId(index)}>
-            <div
-              className="about-card-img"
-
-            >
+          <div
+            key={index}
+            className="about-card"
+            onMouseEnter={() => setActiveId(index)}
+            onMouseLeave={() => setActiveId(null)}
+            onTouchStart={() => setActiveId(index)}
+          >
+            <div className="about-card-img">
               <img
                 src={card.src}
                 alt={card.alt}
                 width="200"
                 height="200"
-                className={`${card.class} ${activeId === index ? "about-card-active" : ""}`}
+                className={activeId === index ? "about-card-active" : ""}
               />
             </div>
 
@@ -72,8 +69,8 @@ function AboutLayout() {
             </div>
           </div>
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

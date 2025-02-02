@@ -1,6 +1,7 @@
 import AboutLayout from "./AboutLayout";
 import Brands from "./Brands";
 import SectorOverview from "./SectorOverview";
+import ServiceLayout from "./ServiceLayout";
 
 function Main() {
   return (
@@ -8,6 +9,7 @@ function Main() {
       <SectorOverview />
       <Brands />
       <AboutLayout />
+      <ServiceLayout />
     </div>
   );
 }

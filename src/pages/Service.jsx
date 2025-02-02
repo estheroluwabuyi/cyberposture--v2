@@ -1,12 +1,13 @@
 // import Header from "../components/Header";
 
 import NavBar from "../components/NavBar";
+import ServiceLayout from "../components/ServiceLayout";
 
 function Service() {
   return (
-    <div>
+    <div className="service service-page">
       <NavBar />
-      <h2>Service Page</h2>
+      <ServiceLayout />
     </div>
   );
 }
