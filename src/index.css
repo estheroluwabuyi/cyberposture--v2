@@ -886,4 +886,25 @@ img {
     width: 14rem;
     height: auto;
   }
+
+  .about-card-active {
+    transform: scale(1.12);
+    transition: transform 800ms ease;
+  }
+
+  .about-card-title {
+    font-size: var(--about-font-size);
+    font-weight: 500;
+    line-height: 26.35px;
+    color: #c7d1ea;
+    padding-bottom: 14.05px;
+  }
+
+  .about-card-mainTexts {
+    padding: 14.05px 28.11px;
+  }
+
+  .about-card-texts {
+    padding: 0;
+  }
 }
