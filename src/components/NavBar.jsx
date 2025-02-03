@@ -1,17 +1,22 @@
+import { useState } from "react";
 import Logo from "./Logo";
 import NavBarLinks from "./NavBarLinks";
 import ScheduleBtn from "./ScheduleBtn";
+import NavBanner from "./NavBanner";
+import NavCard from "./NavCard";
 
 function NavBar() {
+  const [slide, setSlide] = useState(false);
+
+  function handleSlideMenu() {
+    setSlide(!slide);
+  }
+
   return (
     <div>
-      <section className="nav-banner">
-        <Logo />
+      <NavBanner handleSlideMenu={handleSlideMenu} />
 
-        <button className="nav-bar-menu">
-          <img src="menu.png" alt="menu bar" />
-        </button>
-      </section>
+      <NavCard slide={slide} handleSlideMenu={handleSlideMenu} />
 
       <section className="nav-bar">
         <Logo />

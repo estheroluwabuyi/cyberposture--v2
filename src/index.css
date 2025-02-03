@@ -144,6 +144,7 @@ img {
 
 /* Header */
 .header {
+  position: relative;
   background: var(--header-background-gradient);
   width: 100%;
   color: white;
@@ -151,6 +152,7 @@ img {
   padding-top: 7rem;
 }
 
+.nav-card,
 .nav-banner {
   display: none;
 }
@@ -702,6 +704,18 @@ img {
   }
 }
 
+@keyframes slidedown {
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slideup {
+  100% {
+    top: -1000px;
+  }
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 1500px) {
   /* .hero-heading {
@@ -746,17 +760,38 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    /* display: block; */
     background-color: var(--background-color);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3em;
+    z-index: 1000;
+  }
+
+  .nav-card {
+    position: fixed;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    padding: 3rem 4.5rem 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    z-index: 1000;
+    border-radius: 0 0 5rem 5rem;
   }
 
   .nav-bar-links {
-    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-bar-links li {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
   }
 
   .nav-bar-menu {
@@ -764,51 +799,38 @@ img {
     width: 3rem;
     height: auto;
   }
+
+  .nav-bar-close {
+    width: 2.5rem;
+    height: auto;
+    align-self: flex-end;
+    margin-bottom: 5rem;
+  }
+
   .nav-bar-logo {
     width: 13rem;
     height: auto;
   }
-  .nav-bar {
-    /* flex-direction: column;
-    align-items: center;
-    padding: var(--space-md);
-    height: auto;
-    box-shadow: none; */
-    display: none;
-  }
-  /* .nav-bar {
-    flex-direction: column;
-    align-items: center;
-    padding: var(--space-md);
-    height: auto;
-    box-shadow: none;
-  }
-
-  .nav-bar-links {
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-md);
-    width: 100%;
-    padding: var(--space-sm) 0;
-  }
-
-  .nav-bar-links li {
-    width: 100%;
-    text-align: center;
-    padding: var(--space-xs);
-  }
-
-  .nav-bar-links-link {
-    font-size: 1.8rem;
-    display: block;
-    width: 100%;
-    padding: 1rem 0;
-  }
 
   .scheduleBtn {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     text-align: center;
-    margin-top: var(--space-md);
-  } */
+    padding: 1.8rem 0;
+    display: grid;
+    place-content: center;
+    margin-top: 0.8rem;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .slide-down {
+    animation: slidedown 500ms linear forwards;
+  }
+
+  .slide-up {
+    animation: slideup 500ms linear forwards;
+  }
 }
