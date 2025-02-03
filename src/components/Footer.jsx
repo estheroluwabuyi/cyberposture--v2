@@ -8,9 +8,11 @@ function Footer() {
     <section className="footer" id="contact">
       <div className="footer-list">
         <FooterApps />
-        <FooterCases />
-        <FooterExplore />
-        <FooterResources />
+        <div className="footer-list-lists">
+          <FooterCases />
+          <FooterExplore />
+          <FooterResources />
+        </div>
 
         <div className="footer-list-img">
           <img src="cyber-logo.png" alt="cyberposture" />

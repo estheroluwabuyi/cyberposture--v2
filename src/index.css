@@ -306,6 +306,7 @@ img {
 
 .brands {
   color: white;
+  background: var(--background-color);
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -634,6 +635,13 @@ img {
   height: 21.08px;
 }
 
+.footer-list-lists {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  text-align: center;
+}
+
 .footer-list {
   display: flex;
   justify-content: space-between;
@@ -914,7 +922,7 @@ img {
   }
 
   .service-card-title {
-    line-height: 20px;
+    line-height: 1.5;
   }
 
   .service-card-texts {
@@ -981,5 +989,164 @@ img {
   .cta-texts {
     font-size: var(--font-size-base);
     line-height: 2.5rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    background-color: var(--background-color);
+  }
+
+  .footer-apps {
+    gap: 2rem;
+    align-self: center;
+  }
+
+  .footer-apps img {
+    width: 2.1rem;
+    height: auto;
+  }
+
+  .footer-list {
+    flex-direction: column-reverse;
+    padding: 3rem 1.1rem;
+  }
+
+  .footer-list-img {
+    width: 13.5rem;
+    height: auto;
+    align-self: center;
+  }
+
+  .footer-links {
+    font-size: 1.2rem;
+    line-height: 1;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-list-lists {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-links-header {
+    padding-bottom: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-card {
+    display: none;
+  }
+
+  .nav-banner {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+  }
+
+  .nav-bar-links {
+    gap: 2.1rem;
+  }
+
+  .nav-bar-logo {
+    width: 16.95rem;
+    height: 1.76rem;
+  }
+
+  .nav-bar-links li {
+    font-size: 1.8rem;
+  }
+
+  .nav-bar-menu {
+    display: none;
+  }
+
+  .nav-bar-close {
+    display: none;
+  }
+
+  .nav-bar-logo {
+    width: 16.95rem;
+    height: 1.76rem;
+  }
+
+  .nav-bar {
+    display: flex;
+  }
+
+  .nav-bar-links {
+    gap: 2.1rem;
+  }
+
+  .nav-bar-links li {
+    font-size: 1.8rem;
+  }
+
+  .nav-bar-menu {
+    display: none;
+  }
+
+  .nav-bar-close {
+    display: none;
+  }
+
+  .nav-bar-logo {
+    width: 16.95rem;
+    height: 1.76rem;
+  }
+
+  .hero-heading {
+    font-size: 4.3rem;
+  }
+
+  .hero-dynamic-texts li {
+    font-size: 21.1rem;
+  }
+
+  .hero-texts {
+    font-size: var(--font-size-md);
+    line-height: 2.8rem;
+  }
+
+  .hero-btns {
+    gap: 2rem;
+  }
+
+  .brands-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .brands-container div {
+    padding: 0 3.2rem;
+  }
+
+  .brands-container div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--border-color);
+    height: 100%;
+    width: 0.15rem;
+  }
+
+  .custom-heading {
+    font-size: 4.2rem;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-card {
+    width: 297.29px;
+    height: 414.56px;
   }
 }
