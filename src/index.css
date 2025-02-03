@@ -605,7 +605,7 @@ img {
 .cta-title {
   font-weight: 500;
   font-size: 53.36px;
-  list-style: 56.21px;
+  line-height: 56px;
   color: #f6f6f9;
   padding-bottom: 17.57px;
 }
@@ -682,7 +682,6 @@ img {
 }
 
 /* KEYFRAMES */
-
 .slide-down {
   animation: slidedown 500ms linear forwards;
 }
@@ -868,7 +867,6 @@ img {
   }
 
   /* ABOUT US */
-
   .about-container {
     display: grid;
     grid-template-columns: repeat(1, 4fr);
@@ -970,5 +968,18 @@ img {
 
   .review-card-mobile-text {
     text-align: center;
+  }
+
+  /* CTA */
+  .cta-title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .cta-texts {
+    font-size: var(--font-size-base);
+    line-height: 2.5rem;
   }
 }
