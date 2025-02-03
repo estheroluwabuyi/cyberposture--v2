@@ -51,15 +51,22 @@ function ReviewMobile({ reviewCards }) {
             </div>
           </div>
 
-          <p className="review-card-text">{reviewCards[step].review}</p>
+          <p className="review-card-text review-card-mobile-text">
+            {reviewCards[step].review}
+          </p>
 
           <div className="review-btn">
-            <button onClick={handlePrevious} disabled={step === 0}>
+            <button
+              onClick={handlePrevious}
+              disabled={step === 0}
+              className="review-btn-btn btnPrimary scheduleBtn"
+            >
               Previous
             </button>
             <button
               onClick={handleNext}
               disabled={step === reviewCards.length - 1}
+              className="review-btn-btn btnPrimary scheduleBtn"
             >
               Next
             </button>

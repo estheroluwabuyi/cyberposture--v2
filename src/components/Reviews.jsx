@@ -84,7 +84,7 @@ function Reviews() {
                 </div>
               </div>
 
-              <p className="review-card-text">{card.review}</p>
+              <p className=" review-card-text">{card.review}</p>
             </div>
           ))}
         </section>
