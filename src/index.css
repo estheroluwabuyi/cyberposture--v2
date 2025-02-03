@@ -369,7 +369,7 @@ img {
   text-align: center;
   font-size: 4.2rem;
   color: var(--primary-font-color);
-  margin: 3rem 0 4rem 0;
+  margin: 3rem 0 3.5rem 0;
   text-transform: capitalize;
 }
 
@@ -386,7 +386,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   justify-items: center;
-  padding-bottom: 10.5rem;
+  padding-bottom: 10rem;
 }
 
 .about-card {
@@ -860,5 +860,30 @@ img {
     line-height: 1.5;
     text-align: center;
     font-size: 1.8rem;
+  }
+
+  /* ABOUT US */
+
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    justify-items: center;
+    gap: 2.5rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .about-card {
+    padding: 3.5rem 0;
+    width: 100%;
+    height: auto;
+    max-width: 474px;
+    min-height: auto;
+    margin-bottom: 0rem;
+  }
+
+  .about-card-img {
+    width: 14rem;
+    height: auto;
   }
 }
