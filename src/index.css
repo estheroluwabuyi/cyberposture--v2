@@ -729,6 +729,10 @@ img {
   }
 }
 
+.reviews-mobile {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 767px) {
   /* NAV */
@@ -776,6 +780,7 @@ img {
     background: none;
     width: 3rem;
     height: auto;
+    cursor: pointer;
   }
 
   .nav-bar-close {
@@ -919,101 +924,24 @@ img {
   }
 
   /* REVIEWS */
-  .review-container {
-    display: grid;
-    /* grid-template-columns: repeat(1, 1fr); */
-    width: 100%;
-    place-items: center;
-    gap: 2rem;
-    padding-bottom: 10.5rem;
-  }
-
   .reviews {
+    display: none;
+  }
+
+  .reviews-mobile {
     background: var(--background-color);
-    overflow: hidden;
+    display: block;
   }
 
-  .review-container {
-    display: grid;
-    /* grid-template-columns: repeat(3, 2fr); */
-    width: 100%;
-    place-items: center;
-    gap: 34.19px;
-    padding-bottom: 10.5rem;
-  }
-
-  .review-card {
-    width: 402.12px;
-    height: 277.66px;
-    background: #26262699;
-    border-top-right-radius: 27.36px;
-    border: solid 0.68px #242636;
-    padding: 27.36px 41.03px 41.03px 41.03px;
+  .review-btn {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10.94px;
+    gap: 2rem;
   }
 
-  .review-card-quote {
-    width: 54.71px;
-    height: 49.92px;
-    align-self: flex-end;
+  .review-btn button {
+    cursor: pointer;
   }
 
-  .review-card-profile-img {
-    width: 43.77px;
-    height: 43.77px;
-    position: relative;
-  }
-
-  .review-card-profile-img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 1.37px;
-    border-radius: 50%;
-    background: linear-gradient(90.95deg, #09c6de 0.81%, #460389 126.33%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
-
-  .review-card-profile-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  .review-card-profile {
-    display: flex;
-    gap: 8.21px;
-  }
-
-  .review-card-profile-name-title {
-    align-self: center;
-  }
-
-  .review-card-profile-name {
-    font-weight: 13.68px;
-    line-height: 20.52px;
-    font-weight: 500;
-    color: #c7d1ea;
-  }
-
-  .review-card-profile-title {
-    font-weight: 500;
-    font-size: 10.94px;
-    color: #a7a7af;
-    line-height: 20.52px;
-  }
-
-  .review-card-text {
-    font-weight: 500;
-    font-size: 12.31px;
-    line-height: 19.15px;
-    color: #a7a7af;
+  .review-container-mobile {
   }
 }
