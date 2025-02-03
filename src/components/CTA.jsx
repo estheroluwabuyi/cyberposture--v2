@@ -9,9 +9,11 @@ function CTA() {
           Everything you need to to remain cybersecurity compliant is just a
           call away.
         </p>
-        <ScheduleBtn btnPrimary="btnPrimary" className="action-btn">
-          Schedule a Call
-        </ScheduleBtn>
+        <div className="cta-btn">
+          <ScheduleBtn btnPrimary="btnPrimary" className="action-btn">
+            Schedule a Call
+          </ScheduleBtn>
+        </div>
       </div>
     </div>
   );
