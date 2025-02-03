@@ -283,7 +283,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: var(--space-lg);
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 6s linear infinite;
 }
 
 .sector-overview-slider-item {
@@ -306,6 +306,8 @@ img {
 
 .brands {
   color: white;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
 .brands-container {
@@ -315,7 +317,7 @@ img {
   place-items: center;
   grid-template-columns: repeat(6, 1fr);
   width: 90%;
-  margin: 4rem auto;
+  margin: 4rem auto 0rem auto;
 }
 
 .brands-container div {
@@ -696,11 +698,11 @@ img {
 
 @keyframes scrolling {
   0% {
-    transform: translateX(80%);
+    transform: translateX(50%);
   }
 
   100% {
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
 }
 
@@ -740,6 +742,8 @@ img {
     align-items: center;
     padding: 1.5rem 3em;
     z-index: 1000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
   .nav-card {
@@ -801,45 +805,53 @@ img {
 
   /* HERO */
   .hero {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    gap: 1rem;
   }
 
   .hero-heading {
-    font-weight: 300;
     font-size: var(--about-font-size);
-    color: #e5e5e5;
     transform: translateY(8rem);
   }
 
-  .hero-dynamic-texts {
-    overflow: hidden;
-    text-align: center;
-  }
-
   .hero-dynamic-texts li {
-    list-style: none;
-    color: var(--primary-font-color);
     font-size: 5.5rem;
-    font-weight: 800;
-    position: relative;
-    top: 0;
-    animation: slide 7s steps(3) infinite;
-    animation-delay: 1s;
-    letter-spacing: 1px;
   }
 
   .hero-texts {
     width: 100%;
     font-size: var(--font-size-base);
-    text-align: center;
     line-height: 1.5;
     transform: translateY(-8rem);
   }
+
+  .hero-texts,
   .hero-btns {
     transform: translateY(-8rem);
+    padding: 0 2rem;
+    gap: 1.2rem;
+  }
+
+  /* BRANDS */
+  .sectionHeading {
+    font-size: var(--font-size-base);
+  }
+
+  .sector-overview-slider-item {
+    font-size: 7rem;
+  }
+
+  .brands-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    width: 90%;
+  }
+
+  .brands-container div {
+    padding: 0 1rem;
+  }
+
+  .brands-container div:not(:last-child)::after {
+    background: none;
   }
 }
