@@ -869,15 +869,15 @@ img {
     grid-template-columns: repeat(1, 4fr);
     justify-items: center;
     gap: 4rem;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
   .about-card {
     padding: 3.5rem 0;
-    width: 100%;
-    height: auto;
-    max-width: 474px;
+    width: 270px;
+    height: 350px;
+    min-width: 200px;
     min-height: auto;
     margin-bottom: 0rem;
   }
@@ -892,4 +892,29 @@ img {
   }
 
   /* SERVICES */
+  .service {
+    background: var(--other-background-gradient);
+  }
+
+  .service-container {
+    width: 100%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+    gap: 2rem;
+  }
+
+  .service-card {
+    width: 85%;
+    height: auto;
+    padding: 5rem 2.89rem;
+  }
+
+  .service-card-title {
+    line-height: 20px;
+  }
+
+  .service-card-texts {
+    line-height: 20px;
+  }
 }
