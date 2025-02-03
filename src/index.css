@@ -756,6 +756,7 @@ img {
     z-index: 1000;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow: hidden;
   }
 
   .nav-card {
@@ -1038,115 +1039,11 @@ img {
   }
 }
 
-@media (min-width: 768px) {
-  .nav-card {
-    display: none;
-  }
+@media (min-width: 767px) and (max-width: 1300px) {
+}
 
-  .nav-banner {
-    display: none;
-  }
+@media (min-width: 1500px) {
+}
 
-  .nav-bar {
-    display: flex;
-  }
-
-  .nav-bar-links {
-    gap: 2.1rem;
-  }
-
-  .nav-bar-logo {
-    width: 16.95rem;
-    height: 1.76rem;
-  }
-
-  .nav-bar-links li {
-    font-size: 1.8rem;
-  }
-
-  .nav-bar-menu {
-    display: none;
-  }
-
-  .nav-bar-close {
-    display: none;
-  }
-
-  .nav-bar-logo {
-    width: 16.95rem;
-    height: 1.76rem;
-  }
-
-  .nav-bar {
-    display: flex;
-  }
-
-  .nav-bar-links {
-    gap: 2.1rem;
-  }
-
-  .nav-bar-links li {
-    font-size: 1.8rem;
-  }
-
-  .nav-bar-menu {
-    display: none;
-  }
-
-  .nav-bar-close {
-    display: none;
-  }
-
-  .nav-bar-logo {
-    width: 16.95rem;
-    height: 1.76rem;
-  }
-
-  .hero-heading {
-    font-size: 4.3rem;
-  }
-
-  .hero-dynamic-texts li {
-    font-size: 21.1rem;
-  }
-
-  .hero-texts {
-    font-size: var(--font-size-md);
-    line-height: 2.8rem;
-  }
-
-  .hero-btns {
-    gap: 2rem;
-  }
-
-  .brands-container {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .brands-container div {
-    padding: 0 3.2rem;
-  }
-
-  .brands-container div:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: var(--border-color);
-    height: 100%;
-    width: 0.15rem;
-  }
-
-  .custom-heading {
-    font-size: 4.2rem;
-  }
-
-  .about-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .about-card {
-    width: 297.29px;
-    height: 414.56px;
-  }
+@media (max-width: 320px) {
 }
