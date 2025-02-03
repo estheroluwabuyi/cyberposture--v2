@@ -363,12 +363,13 @@ img {
 }
 
 .custom-heading {
+  padding: 0 1.5rem;
   font-weight: 700;
   line-height: 51.02px;
   text-align: center;
   font-size: 4.2rem;
   color: var(--primary-font-color);
-  margin: 4rem 0 5rem 0;
+  margin: 3rem 0 4rem 0;
   text-transform: capitalize;
 }
 
@@ -853,5 +854,11 @@ img {
 
   .brands-container div:not(:last-child)::after {
     background: none;
+  }
+
+  .custom-heading {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.8rem;
   }
 }
