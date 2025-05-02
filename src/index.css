@@ -743,6 +743,23 @@ img {
 
 /* MEDIA QUERIES */
 @media (max-width: 767px) {
+  .img-1 img {
+    width: 100%;
+    height: auto;
+  }
+  .img-2 img {
+    width: 100%;
+    height: auto;
+  }
+  .img-3 img {
+    width: 100%;
+    height: auto;
+  }
+  .img-4 img {
+    width: 100%;
+    height: auto;
+  }
+
   /* NAV */
   .nav-banner {
     position: fixed;
@@ -1059,6 +1076,23 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1320px) {
+  .img-1 img {
+    width: 100%;
+    height: auto;
+  }
+  .img-2 img {
+    width: 100%;
+    height: auto;
+  }
+  .img-3 img {
+    width: 100%;
+    height: auto;
+  }
+  .img-4 img {
+    width: 100%;
+    height: auto;
+  }
+
   /* NAVBAR LOGO */
   .nav-bar-logo {
     height: auto;

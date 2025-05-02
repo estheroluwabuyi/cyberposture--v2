@@ -3,11 +3,8 @@ import Header from "./Header";
 import Home from "../pages/Home";
 import Service from "../pages/Service";
 import About from "../pages/About";
-import Contact from "../pages/Contact";
-import Schedule from "../pages/Schedule";
 import NoPage from "../pages/NoPage";
 import Layout from "./Layout";
-import Footer from "./Footer";
 
 function AppContent() {
   const location = useLocation();

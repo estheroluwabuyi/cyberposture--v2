@@ -40,7 +40,7 @@ function Brands() {
 
       <div className="brands-container">
         {brands.map((brand, index) => (
-          <div key={index} className={brand.class}>
+          <div key={index} className={brand.c}>
             <img src={brand.src} alt={brand.alt} width="100" height="100" />
           </div>
         ))}

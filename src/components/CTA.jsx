@@ -2,7 +2,7 @@ import ScheduleBtn from "./ScheduleBtn";
 
 function CTA() {
   return (
-    <div className="cta">
+    <div className="cta" id="cta">
       <div className="cta-body">
         <h3 className="cta-title">Get started. It's easy</h3>
         <p className="cta-texts">
